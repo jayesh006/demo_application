@@ -1,4 +1,11 @@
+import 'package:demoapplication/Screens/bottom_navigation/bottomNavigationExample.dart';
+import 'package:demoapplication/Screens/expanded.dart';
+import 'package:demoapplication/Screens/fabButton.dart';
 import 'package:flutter/material.dart';
+
+import 'Screens/ClipRect/clipRectExample.dart';
+import 'Screens/absorbPointer.dart';
+import 'Screens/warp.dart';
 
 void main() {
   runApp(MyApp());
@@ -9,6 +16,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
         // This is the theme of your application.
@@ -26,8 +34,44 @@ class MyApp extends StatelessWidget {
         // closer together (more dense) than on mobile platforms.
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+
+
+// Normal title
+//      home: MyHomePage(title: 'Flutter Demo Home Page'),
+
+//    Safe Area
+//    home: Scaffold(
+//      appBar: AppBar(title: Text('Safe Area demo', style: TextStyle(color: Colors.black, fontSize: 30),),backgroundColor: Colors.blueGrey,),
+//      backgroundColor: Colors.lightBlueAccent,
+//      body: SafeArea(
+//        top: true,
+//        minimum: EdgeInsets.all(50.0),
+//        child: Text('Safe Area', textDirection: TextDirection.ltr, style: TextStyle(fontSize: 40),),
+//      ),
+//    )
+
+//    Expanded
+//    home: expanded(),
+//
+//    Warp
+//    home: warp(),
+
+//    Floating Action Button
+//    home: fabButton()
+
+//    ClipRect
+//    home: clipRectExample(),
+
+//    Bottom Navigation
+//    home: bottomNavigationExample(),
+
+//      Absorb Pointer
+    home: absorbPointer()
+
     );
+
+
+
   }
 }
 
