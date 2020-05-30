@@ -42,44 +42,32 @@ class showAbsorbPointer extends State<absorbPointer>{
 //        ),
 //      ),
 //    );
-  return SizedBox(
-    width: double.infinity,
-    child: Stack(
+  return  Stack(
+    alignment: Alignment.center,
       children: <Widget>[
-        Positioned(
-          left: 0,
-          width: 250,
-          child: AbsorbPointer(
-            absorbing: false,
-            child: Column(
-//              mainAxisAlignment: MainAxisAlignment.start,
-              children: <Widget>[
-                RaisedButton(
-                  child: Text('Absorbe Pointer'),
-                  onPressed: (){
-                    print('Absorbe Pointer');
-                  },
-                )
-              ],
-            ),
+        IgnorePointer(
+          ignoring: false,
+          child: RaisedButton(
+            child: Text('Ignore Pointer'),
+            onPressed: (){
+              print('Ignore Pointer');
+            },
           ),
         ),
-        Positioned(
-          right: 0,
-          width: 250,
-          child: IgnorePointer(
-            ignoring: false,
-            child: RaisedButton(
-              child: Text('Ignore Pointer'),
-              onPressed: (){
-                print('Ignore Pointer');
-              },
-            ),
-          ),
-        )
+        AbsorbPointer(
+          absorbing: true,
+          child:
+              RaisedButton(
+                child: Text('Absorbe Pointer'),
+                onPressed: (){
+                  print('Absorbe Pointer');
+                },
+              )
+
+        ),
+
       ],
-    ),
-  );
+    );
   }
 
 }
