@@ -1,14 +1,19 @@
 import 'package:demoapplication/Screens/aspectRatio.dart';
 import 'package:demoapplication/Screens/bottom_navigation/bottomNavigationExample.dart';
+import 'package:demoapplication/Screens/button.dart';
 import 'package:demoapplication/Screens/expanded.dart';
 import 'package:demoapplication/Screens/fabButton.dart';
 import 'package:demoapplication/Screens/flexible.dart';
 import 'package:demoapplication/Screens/limitedbox.dart';
 import 'package:demoapplication/Screens/overflowbox.dart';
+import 'package:demoapplication/Screens/placeholder.dart';
 import 'package:demoapplication/Screens/positionWidget/centerWidget.dart';
 import 'package:demoapplication/Screens/positionWidget/positionWidget.dart';
 import 'package:demoapplication/Screens/positionWidget/sizebox.dart';
+import 'package:demoapplication/Screens/richtext.dart';
+import 'package:demoapplication/Screens/semantic.dart';
 import 'package:demoapplication/Screens/spacer.dart';
+import 'package:demoapplication/Screens/stack.dart';
 import 'package:flutter/material.dart';
 
 import 'Screens/ClipRect/clipRectExample.dart';
@@ -97,12 +102,28 @@ class MyApp extends StatelessWidget {
 //    home: aspectRation(),
 
 //    limited box
-      home: limitedbox(),
+//      home: limitedbox(),
 
 //    overflowbox
 //    home: overflowbox(),
 
+//    Placeholder
+//    home: placeholder(),
+
+//    Rich Text
+//    home: richtext(),
+
+//    Button
+//    home: button(),
+
+//    semantic
+//    home: semantic(),
+
+//    stack
+    home: stack(),
+
     );
+
   }
 }
 
