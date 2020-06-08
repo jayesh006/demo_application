@@ -1,6 +1,14 @@
+import 'package:demoapplication/Screens/aspectRatio.dart';
 import 'package:demoapplication/Screens/bottom_navigation/bottomNavigationExample.dart';
 import 'package:demoapplication/Screens/expanded.dart';
 import 'package:demoapplication/Screens/fabButton.dart';
+import 'package:demoapplication/Screens/flexible.dart';
+import 'package:demoapplication/Screens/limitedbox.dart';
+import 'package:demoapplication/Screens/overflowbox.dart';
+import 'package:demoapplication/Screens/positionWidget/centerWidget.dart';
+import 'package:demoapplication/Screens/positionWidget/positionWidget.dart';
+import 'package:demoapplication/Screens/positionWidget/sizebox.dart';
+import 'package:demoapplication/Screens/spacer.dart';
 import 'package:flutter/material.dart';
 
 import 'Screens/ClipRect/clipRectExample.dart';
@@ -35,7 +43,6 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
 
-
 // Normal title
 //      home: MyHomePage(title: 'Flutter Demo Home Page'),
 
@@ -66,12 +73,36 @@ class MyApp extends StatelessWidget {
 //    home: bottomNavigationExample(),
 
 //      Absorb Pointer
-    home: absorbPointer()
+//    home: absorbPointer()
+
+//    Align Widget
+//        home: alignWidget()
+
+//    center Widget
+//    home: centerWidget(),
+
+//    Position Widget
+//    home: positionWidget(),
+
+//    Size Box
+//    home: sizebox(),
+
+//    Flexible
+//    home: flexible(),
+
+//    Spacer
+//    home: spacer(),
+
+//    aspect Ratio
+//    home: aspectRation(),
+
+//    limited box
+      home: limitedbox(),
+
+//    overflowbox
+//    home: overflowbox(),
 
     );
-
-
-
   }
 }
 
