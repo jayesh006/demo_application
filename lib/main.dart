@@ -114,13 +114,13 @@ class MyApp extends StatelessWidget {
 //    home: richtext(),
 
 //    Button
-//    home: button(),
+    home: button(),
 
 //    semantic
 //    home: semantic(),
 
 //    stack
-    home: stack(),
+//    home: stack(),
 
     );
 

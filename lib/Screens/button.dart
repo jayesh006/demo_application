@@ -1,3 +1,4 @@
+import 'package:demoapplication/Screens/optionbutton.dart';
 import 'package:flutter/material.dart';
 
 class button extends StatelessWidget {
@@ -16,25 +17,30 @@ class button extends StatelessWidget {
               children: <Widget>[
                 RaisedButton(
                   child: Text('Raise Button'),
-                  onPressed: (){
+                  onPressed: () {
                     print('Raised Button');
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => optionbutton(true)
+                        )
+                    );
                   },
                 ),
                 OutlineButton(
                   child: Text('Outline Button'),
-                  onPressed: (){
+                  onPressed: () {
                     print('Outline Button');
                   },
                 ),
                 FlatButton(
                   child: Text('Flat Button'),
-                  onPressed: (){
+                  onPressed: () {
                     print('Flat Button');
                   },
                 ),
                 IconButton(
                   icon: Icon(Icons.home),
-                  onPressed: (){
+                  onPressed: () {
                     print('Icon Button');
                   },
                 )
